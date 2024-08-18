@@ -54,7 +54,7 @@
         <button type="button" class="customBtn" data-bs-toggle="modal" data-bs-target="#getApp">
           get the app
         </button>
-        <div class="dropdown">
+        <!-- <div class="dropdown">
           <button class=" dropdown-toggle link text" type="button" id="addPost" data-bs-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             <img src="img/icons/plus.svg" alt="">
@@ -71,6 +71,35 @@
               Sell
             </a>
           </div>
+        </div> -->
+        <div class="dropdown">
+          <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="img/lang.svg" alt="">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="myAccount">
+            <a href="javascript:void(0)" class="dropdown-item"> English </a>
+            <a href="javascript:void(0)" class="dropdown-item"> العربية </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="img/currency.svg" alt="" class="currency-img">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="myAccount">
+            <a href="javascript:void(0)" class="dropdown-item"> USD </a>
+            <a href="javascript:void(0)" class="dropdown-item"> EUR </a>
+            <a href="javascript:void(0)" class="dropdown-item"> GBP </a>
+            <a href="javascript:void(0)" class="dropdown-item"> SAR </a>
+            <a href="javascript:void(0)" class="dropdown-item"> EGP </a>
+          </div>
+        </div>
+        <div class="cart_btn">
+          <button class="link">
+            <img src="img/cart.svg" alt="cart">
+          </button>
+          <span class="qunatity"> 10 </span>
         </div>
         <div class="dropdown">
           <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
@@ -258,7 +287,107 @@
         </div>
       </div>
     </section>
+    <div class="cart_mini">
+      <div class="header">
+        <h4>Shopping Cart</h4>
+      </div>
+      <div class="products">
+        <!-- product -->
+        <div class="product">
+          <div class="img">
+            <img src="img/listing/item (6).jpg" alt="item">
+          </div>
+          <div class="info">
+            <h6>Apple MacBook Air Apple M2 Chip</h6>
+            <span>Quantity: 1</span>
+            <span class="price">$100.00</span>
+          </div>
+          <button class="remove">
+            <img src="img/xmark.svg" alt="x">
+          </button>
+        </div>
+        <!-- product -->
+        <div class="product">
+          <div class="img">
+            <img src="img/listing/item (6).jpg" alt="item">
+          </div>
+          <div class="info">
+            <h6>Apple MacBook Air Apple M2 Chip</h6>
+            <span>Quantity: 1</span>
+            <span class="price">$100.00</span>
+          </div>
+          <button class="remove">
+            <img src="img/xmark.svg" alt="x">
+          </button>
+        </div>
+        <!-- product -->
+        <div class="product">
+          <div class="img">
+            <img src="img/listing/item (6).jpg" alt="item">
+          </div>
+          <div class="info">
+            <h6>Apple MacBook Air Apple M2 Chip</h6>
+            <span>Quantity: 1</span>
+            <span class="price">$100.00</span>
+          </div>
+          <button class="remove">
+            <img src="img/xmark.svg" alt="x">
+          </button>
+        </div>
+        <!-- product -->
+        <div class="product">
+          <div class="img">
+            <img src="img/listing/item (6).jpg" alt="item">
+          </div>
+          <div class="info">
+            <h6>Apple MacBook Air Apple M2 Chip</h6>
+            <span>Quantity: 1</span>
+            <span class="price">$100.00</span>
+          </div>
+          <button class="remove">
+            <img src="img/xmark.svg" alt="x">
+          </button>
+        </div>
+        <!-- product -->
+        <div class="product">
+          <div class="img">
+            <img src="img/listing/item (6).jpg" alt="item">
+          </div>
+          <div class="info">
+            <h6>Apple MacBook Air Apple M2 Chip</h6>
+            <span>Quantity: 1</span>
+            <span class="price">$100.00</span>
+          </div>
+          <button class="remove">
+            <img src="img/xmark.svg" alt="x">
+          </button>
+        </div>
+      </div>
+      <!-- mini cart footer -->
+      <div class="footer">
+        <div class="total">
+          <h4>Total: </h4>
+          <h4>$0.00</h4>
+        </div>
+        <button class="view_cart">
+          <img src="img/cart.svg" alt="">
+          View Cart
+        </button>
+        <a href="checkout.html">
+          <span class="icon">
+            <svg class="qodef-svg--button-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="13.853"
+              viewBox="0 0 18.47 13.853">
+              <path
+                d="M675.316-719.322a.463.463,0,0,0-.043.652.462.462,0,0,0,.652.044l7.388-6.464a.462.462,0,0,0,.157-.348.462.462,0,0,0-.157-.348l-7.388-6.464a.462.462,0,0,0-.652.044.463.463,0,0,0,.043.652l6.464,5.655H665.462a.461.461,0,0,0-.462.462.461.461,0,0,0,.462.462H681.78Zm0,0"
+                transform="translate(-665 732.365)"></path>
+            </svg>
+          </span>
+          Go to checkout
+        </a>
+      </div>
+    </div>
   </header>
+  <div class="layer"></div>
   <!-- Modal -->
   <div class="modal fade getAppModal" id="getApp" tabindex="-1" data-bs-keyboard="false" role="dialog"
     aria-hidden="true">

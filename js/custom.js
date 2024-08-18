@@ -320,6 +320,30 @@ $(document).ready(function () {
       reader.readAsDataURL(file);
     }
   });
+
+  function updateDistance(value) {
+    document.getElementById("distanceValue").textContent = value;
+  }
+
+  const cartBtn = document.querySelector(".cart_btn");
+  const miniCart = document.querySelector(".cart_mini");
+  const layer = document.querySelector(".layer");
+
+  cartBtn.addEventListener("click", () => {
+    miniCart.classList.toggle("active");
+    layer.classList.toggle("active");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      miniCart.classList.contains("active") &&
+      !event.target.closest(".cart_btn") &&
+      !event.target.closest(".cart_mini")
+    ) {
+      miniCart.classList.remove("active");
+      layer.classList.remove("active");
+    }
+  });
 });
 // filter
 $("#openfilter").on("click", function () {
@@ -328,63 +352,73 @@ $("#openfilter").on("click", function () {
 $("#closefilter").on("click", function () {
   $("#filter").removeClass("active");
 });
-// 
-document.addEventListener('DOMContentLoaded', function () {
-  const headerCategoriesWithSub = document.querySelector('header .headerCategoriesWithSub');
-  const categories = Array.from(document.querySelectorAll('header .singleCategory:not(.more)'));
-  const moreCategory = document.querySelector('header .singleCategory.more');
-  const moreMenu = moreCategory.querySelector('.menu');
+//
+document.addEventListener("DOMContentLoaded", function () {
+  const headerCategoriesWithSub = document.querySelector(
+    "header .headerCategoriesWithSub"
+  );
+  const categories = Array.from(
+    document.querySelectorAll("header .singleCategory:not(.more)")
+  );
+  const moreCategory = document.querySelector("header .singleCategory.more");
+  const moreMenu = moreCategory.querySelector(".menu");
   function adjustCategories() {
     const headerWidth = headerCategoriesWithSub.getBoundingClientRect().width;
     let totalWidth = 0;
     let moreShown = false;
-    categories.forEach(category => {
-      category.style.display = 'block';
+    categories.forEach((category) => {
+      category.style.display = "block";
     });
-    moreMenu.innerHTML = '';
+    moreMenu.innerHTML = "";
     categories.forEach((category, index) => {
       totalWidth += category.getBoundingClientRect().width;
-      if (totalWidth + (index < categories.length - 1 ? categories[index + 1].getBoundingClientRect().width : 0) > headerWidth) {
+      if (
+        totalWidth +
+          (index < categories.length - 1
+            ? categories[index + 1].getBoundingClientRect().width
+            : 0) >
+        headerWidth
+      ) {
         moreShown = true;
         for (let i = index - 1; i < categories.length; i++) {
           if (i >= 0) {
             moreMenu.appendChild(categories[i].cloneNode(true));
-            categories[i].style.display = 'none';
+            categories[i].style.display = "none";
           }
         }
         return false;
       }
     });
-    moreCategory.style.display = moreShown ? 'block' : 'none';
+    moreCategory.style.display = moreShown ? "block" : "none";
   }
-  window.addEventListener('resize', adjustCategories);
+  window.addEventListener("resize", adjustCategories);
   adjustCategories();
 });
-document.addEventListener('DOMContentLoaded', function () {
-  const categories = document.querySelectorAll('header .singleCategory');
+document.addEventListener("DOMContentLoaded", function () {
+  const categories = document.querySelectorAll("header .singleCategory");
   function adjustMenuPosition() {
-    categories.forEach(category => {
-      const menu = category.querySelector('.menu');
+    categories.forEach((category) => {
+      const menu = category.querySelector(".menu");
       const rect = menu.getBoundingClientRect();
       if (rect.right > window.innerWidth) {
         menu.style.left = `-${rect.right - window.innerWidth}px`;
       } else {
-        menu.style.left = '0';
+        menu.style.left = "0";
       }
     });
   }
-  categories.forEach(category => {
-    category.addEventListener('mouseenter', adjustMenuPosition);
+  categories.forEach((category) => {
+    category.addEventListener("mouseenter", adjustMenuPosition);
   });
-  window.addEventListener('resize', adjustMenuPosition);
+  window.addEventListener("resize", adjustMenuPosition);
 });
 $(document).ready(function () {
-  $('.singleCategory').click(function (event) {
+  $(".singleCategory").click(function (event) {
     event.stopPropagation();
-    $('.singleCategory').not(this).find('.menu').removeClass('show');
-    $(this).find('.menu').toggleClass('show');
+    $(".singleCategory").not(this).find(".menu").removeClass("show");
+    $(this).find(".menu").toggleClass("show");
   });
   $(document).click(function () {
-    $('.menu').removeClass('show');
+    $(".menu").removeClass("show");
   });
 });

@@ -24,71 +24,100 @@
     <!-- ================ Header ================= -->
     <header>
         <section class="mainLinks">
-            <!-- brand -->
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.svg" loading="lazy" alt="">
-            </a>
-            <!-- search form -->
-            <!-- <form class="searchForm">
+          <!-- brand -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" loading="lazy" alt="">
+          </a>
+          <!-- search form -->
+          <!-- <form class="searchForm">
             <input type="search" class="form-control" placeholder="Search ">
             <button class="btn"> <img src="img/icons/search.svg" alt=""> </button>
           </form> -->
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <ul class="navbar-nav">
-                    <a class="logo" href="index.html">
-                        <img src="img/logo.svg" loading="lazy" alt="">
-                    </a>
-                    <a class="navLink" href="index.html"> Home </a>
-                    <a class="navLink" href="categories.html"> categories </a>
-                    <a class="navLink" href="listing.html"> listing </a>
-                    <a class="navLink" href="chats.html"> Chats </a>
-                    <a class="navLink" href="contactUs.html"> contact us </a>
-                </ul>
-            </nav>
-            <!-- Actions -->
-            <div class="moreActions">
-                <button type="button" class="customBtn" data-bs-toggle="modal" data-bs-target="#getApp">
-                    get the app
-                </button>
-                <div class="dropdown">
-                    <button class=" dropdown-toggle link text" type="button" id="addPost" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <img src="img/icons/plus.svg" alt="">
-                        Add Post
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="addPost">
-                        <p> what do you want ? </p>
-                        <a href="addPost.html" class="dropdown-item">
-                            <img src="img/icons/wanted.svg" alt="">
-                            Wanted
-                        </a>
-                        <a href="addPost.html" class="dropdown-item">
-                            <img src="img/icons/sell.svg" alt="">
-                            Sell
-                        </a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <img src="img/icons/user.svg" alt="">
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="myAccount">
-                        <a href="login.html" class="dropdown-item"> login </a>
-                        <a href="myPosts.html" class="dropdown-item"> my posts </a>
-                        <a href="notifications.html" class="dropdown-item"> notifications </a>
-                        <a href="bought.html" class="dropdown-item"> Bought </a>
-                        <a href="favorite.html" class="dropdown-item"> Favorite </a>
-                        <a href="truYou.html" class="dropdown-item"> TruYou </a>
-                        <a href="editProfile.html" class="dropdown-item"> edit Profile </a>
-                        <a href="login.html" class="dropdown-item"> logout </a>
-                    </div>
-                </div>
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav">
+              <a class="logo" href="index.html">
+                <img src="img/logo.svg" loading="lazy" alt="">
+              </a>
+              <a class="navLink" href="index.html"> Home </a>
+              <a class="navLink" href="categories.html"> categories </a>
+              <a class="navLink" href="listing.html"> listing </a>
+              <a class="navLink" href="chats.html"> Chats </a>
+              <a class="navLink" href="contactUs.html"> contact us </a>
+            </ul>
+          </nav>
+          <!-- Actions -->
+          <div class="moreActions">
+            <button type="button" class="customBtn" data-bs-toggle="modal" data-bs-target="#getApp">
+              get the app
+            </button>
+            <!-- <div class="dropdown">
+              <button class=" dropdown-toggle link text" type="button" id="addPost" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/plus.svg" alt="">
+                Add Post
+              </button>
+              <div class="dropdown-menu" aria-labelledby="addPost">
+                <p> what do you want ? </p>
+                <a href="addPost.html" class="dropdown-item">
+                  <img src="img/icons/wanted.svg" alt="">
+                  Wanted
+                </a>
+                <a href="addPost.html" class="dropdown-item">
+                  <img src="img/icons/sell.svg" alt="">
+                  Sell
+                </a>
+              </div>
+            </div> -->
+            <div class="dropdown">
+              <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="img/lang.svg" alt="">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="myAccount">
+                <a href="javascript:void(0)" class="dropdown-item"> English </a>
+                <a href="javascript:void(0)" class="dropdown-item"> العربية </a>
+              </div>
             </div>
+            <div class="dropdown">
+              <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="img/currency.svg" alt="" class="currency-img">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="myAccount">
+                <a href="javascript:void(0)" class="dropdown-item"> USD </a>
+                <a href="javascript:void(0)" class="dropdown-item"> EUR </a>
+                <a href="javascript:void(0)" class="dropdown-item"> GBP </a>
+                <a href="javascript:void(0)" class="dropdown-item"> SAR </a>
+                <a href="javascript:void(0)" class="dropdown-item"> EGP </a>
+              </div>
+            </div>
+            <div class="cart_btn">
+              <button class="link">
+                <img src="img/cart.svg" alt="cart">
+              </button>
+              <span class="qunatity"> 10 </span>
+            </div>
+            <div class="dropdown">
+              <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/user.svg" alt="">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="myAccount">
+                <a href="login.html" class="dropdown-item"> login </a>
+                <a href="myPosts.html" class="dropdown-item"> my posts </a>
+                <a href="notifications.html" class="dropdown-item"> notifications </a>
+                <a href="bought.html" class="dropdown-item"> Bought </a>
+                <a href="favorite.html" class="dropdown-item"> Favorite </a>
+                <a href="truYou.html" class="dropdown-item"> TruYou </a>
+                <a href="editProfile.html" class="dropdown-item"> edit Profile </a>
+                <a href="login.html" class="dropdown-item"> logout </a>
+              </div>
+            </div>
+          </div>
         </section>
         <!-- if not have sub categories -->
         <!-- <section class="headerCategories">
@@ -135,130 +164,230 @@
         </section> -->
         <!-- if have sub categories -->
         <section class="headerCategoriesWithSub">
-            <!-- more category -->
-            <div class="singleCategory more">
-                <a href="#" class="link">
-                    <img src="img/categories/more.svg" alt="">
-                    Categories </a>
-                <div class="menu"></div>
+          <!-- more category -->
+          <div class="singleCategory more">
+            <a href="#" class="link">
+              <img src="img/categories/more.svg" alt="">
+              Categories </a>
+            <div class="menu"></div>
+          </div>
+          <!-- category -->
+          <div class="singleCategory">
+            <a href="listing.html" class="link">
+              <img src="img/categories/icon (1).svg" alt="">
+              Mobile & Tablets </a>
+            <div class="menu">
+              <a href="listing.html" class="sub"> Mobile </a>
+              <a href="listing.html" class="sub"> Tablets </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Cameras </a>
+              <a href="listing.html" class="sub"> Speakers </a>
+              <a href="listing.html" class="sub"> Others </a>
             </div>
-            <!-- category -->
-            <div class="singleCategory">
-                <a href="listing.html" class="link">
-                    <img src="img/categories/icon (1).svg" alt="">
-                    Mobile & Tablets </a>
-                <div class="menu">
-                    <a href="listing.html" class="sub"> Mobile </a>
-                    <a href="listing.html" class="sub"> Tablets </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Cameras </a>
-                    <a href="listing.html" class="sub"> Speakers </a>
-                    <a href="listing.html" class="sub"> Others </a>
-                </div>
+          </div>
+          <!-- category -->
+          <div class="singleCategory">
+            <a href="listing.html" class="link">
+              <img src="img/categories/icon (2).svg" alt="">
+              Vehicles </a>
+            <div class="menu">
+              <a href="listing.html" class="sub"> Mobile </a>
+              <a href="listing.html" class="sub"> Tablets </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Cameras </a>
+              <a href="listing.html" class="sub"> Speakers </a>
+              <a href="listing.html" class="sub"> Others </a>
             </div>
-            <!-- category -->
-            <div class="singleCategory">
-                <a href="listing.html" class="link">
-                    <img src="img/categories/icon (2).svg" alt="">
-                    Vehicles </a>
-                <div class="menu">
-                    <a href="listing.html" class="sub"> Mobile </a>
-                    <a href="listing.html" class="sub"> Tablets </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Cameras </a>
-                    <a href="listing.html" class="sub"> Speakers </a>
-                    <a href="listing.html" class="sub"> Others </a>
-                </div>
+          </div>
+          <!-- category -->
+          <div class="singleCategory">
+            <a href="listing.html" class="link">
+              <img src="img/categories/icon (3).svg" alt="">
+              Properties </a>
+            <div class="menu">
+              <a href="listing.html" class="sub"> Mobile </a>
+              <a href="listing.html" class="sub"> Tablets </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Cameras </a>
+              <a href="listing.html" class="sub"> Speakers </a>
+              <a href="listing.html" class="sub"> Others </a>
             </div>
-            <!-- category -->
-            <div class="singleCategory">
-                <a href="listing.html" class="link">
-                    <img src="img/categories/icon (3).svg" alt="">
-                    Properties </a>
-                <div class="menu">
-                    <a href="listing.html" class="sub"> Mobile </a>
-                    <a href="listing.html" class="sub"> Tablets </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Cameras </a>
-                    <a href="listing.html" class="sub"> Speakers </a>
-                    <a href="listing.html" class="sub"> Others </a>
-                </div>
+          </div>
+          <!-- category -->
+          <div class="singleCategory">
+            <a href="listing.html" class="link">
+              <img src="img/categories/icon (4).svg" alt="">
+              Jobs </a>
+            <div class="menu">
+              <a href="listing.html" class="sub"> Mobile </a>
+              <a href="listing.html" class="sub"> Tablets </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Cameras </a>
+              <a href="listing.html" class="sub"> Speakers </a>
+              <a href="listing.html" class="sub"> Others </a>
             </div>
-            <!-- category -->
-            <div class="singleCategory">
-                <a href="listing.html" class="link">
-                    <img src="img/categories/icon (4).svg" alt="">
-                    Jobs </a>
-                <div class="menu">
-                    <a href="listing.html" class="sub"> Mobile </a>
-                    <a href="listing.html" class="sub"> Tablets </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Cameras </a>
-                    <a href="listing.html" class="sub"> Speakers </a>
-                    <a href="listing.html" class="sub"> Others </a>
-                </div>
+          </div>
+          <!-- category -->
+          <div class="singleCategory">
+            <a href="listing.html" class="link">
+              <img src="img/categories/icon (5).svg" alt="">
+              Kids & Babies </a>
+            <div class="menu">
+              <a href="listing.html" class="sub"> Mobile </a>
+              <a href="listing.html" class="sub"> Tablets </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Cameras </a>
+              <a href="listing.html" class="sub"> Speakers </a>
+              <a href="listing.html" class="sub"> Others </a>
             </div>
-            <!-- category -->
-            <div class="singleCategory">
-                <a href="listing.html" class="link">
-                    <img src="img/categories/icon (5).svg" alt="">
-                    Kids & Babies </a>
-                <div class="menu">
-                    <a href="listing.html" class="sub"> Mobile </a>
-                    <a href="listing.html" class="sub"> Tablets </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Cameras </a>
-                    <a href="listing.html" class="sub"> Speakers </a>
-                    <a href="listing.html" class="sub"> Others </a>
-                </div>
+          </div>
+          <!-- category -->
+          <div class="singleCategory">
+            <a href="listing.html" class="link">
+              <img src="img/categories/icon (6).svg" alt="">
+              Hoppies </a>
+            <div class="menu">
+              <a href="listing.html" class="sub"> Mobile </a>
+              <a href="listing.html" class="sub"> Tablets </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Cameras </a>
+              <a href="listing.html" class="sub"> Speakers </a>
+              <a href="listing.html" class="sub"> Others </a>
             </div>
-            <!-- category -->
-            <div class="singleCategory">
-                <a href="listing.html" class="link">
-                    <img src="img/categories/icon (6).svg" alt="">
-                    Hoppies </a>
-                <div class="menu">
-                    <a href="listing.html" class="sub"> Mobile </a>
-                    <a href="listing.html" class="sub"> Tablets </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Cameras </a>
-                    <a href="listing.html" class="sub"> Speakers </a>
-                    <a href="listing.html" class="sub"> Others </a>
-                </div>
+          </div>
+          <!-- category -->
+          <div class="singleCategory">
+            <a href="listing.html" class="link">
+              <img src="img/categories/icon (7).svg" alt="">
+              Pets </a>
+            <div class="menu">
+              <a href="listing.html" class="sub"> Mobile </a>
+              <a href="listing.html" class="sub"> Tablets </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Cameras </a>
+              <a href="listing.html" class="sub"> Speakers </a>
+              <a href="listing.html" class="sub"> Others </a>
             </div>
-            <!-- category -->
-            <div class="singleCategory">
-                <a href="listing.html" class="link">
-                    <img src="img/categories/icon (7).svg" alt="">
-                    Pets </a>
-                <div class="menu">
-                    <a href="listing.html" class="sub"> Mobile </a>
-                    <a href="listing.html" class="sub"> Tablets </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Cameras </a>
-                    <a href="listing.html" class="sub"> Speakers </a>
-                    <a href="listing.html" class="sub"> Others </a>
-                </div>
+          </div>
+          <!-- category -->
+          <div class="singleCategory">
+            <a href="listing.html" class="link">
+              <img src="img/categories/icon (8).svg" alt="">
+              Furniture & Decor </a>
+            <div class="menu">
+              <a href="listing.html" class="sub"> Mobile </a>
+              <a href="listing.html" class="sub"> Tablets </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Laptops </a>
+              <a href="listing.html" class="sub"> Cameras </a>
+              <a href="listing.html" class="sub"> Speakers </a>
+              <a href="listing.html" class="sub"> Others </a>
             </div>
-            <!-- category -->
-            <div class="singleCategory">
-                <a href="listing.html" class="link">
-                    <img src="img/categories/icon (8).svg" alt="">
-                    Furniture & Decor </a>
-                <div class="menu">
-                    <a href="listing.html" class="sub"> Mobile </a>
-                    <a href="listing.html" class="sub"> Tablets </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Laptops </a>
-                    <a href="listing.html" class="sub"> Cameras </a>
-                    <a href="listing.html" class="sub"> Speakers </a>
-                    <a href="listing.html" class="sub"> Others </a>
-                </div>
-            </div>
+          </div>
         </section>
-    </header>
+        <div class="cart_mini">
+          <div class="header">
+            <h4>Shopping Cart</h4>
+          </div>
+          <div class="products">
+            <!-- product -->
+            <div class="product">
+              <div class="img">
+                <img src="img/listing/item (6).jpg" alt="item">
+              </div>
+              <div class="info">
+                <h6>Apple MacBook Air Apple M2 Chip</h6>
+                <span>Quantity: 1</span>
+                <span class="price">$100.00</span>
+              </div>
+              <button class="remove">
+                <img src="img/xmark.svg" alt="x">
+              </button>
+            </div>
+            <!-- product -->
+            <div class="product">
+              <div class="img">
+                <img src="img/listing/item (6).jpg" alt="item">
+              </div>
+              <div class="info">
+                <h6>Apple MacBook Air Apple M2 Chip</h6>
+                <span>Quantity: 1</span>
+                <span class="price">$100.00</span>
+              </div>
+              <button class="remove">
+                <img src="img/xmark.svg" alt="x">
+              </button>
+            </div>
+            <!-- product -->
+            <div class="product">
+              <div class="img">
+                <img src="img/listing/item (6).jpg" alt="item">
+              </div>
+              <div class="info">
+                <h6>Apple MacBook Air Apple M2 Chip</h6>
+                <span>Quantity: 1</span>
+                <span class="price">$100.00</span>
+              </div>
+              <button class="remove">
+                <img src="img/xmark.svg" alt="x">
+              </button>
+            </div>
+            <!-- product -->
+            <div class="product">
+              <div class="img">
+                <img src="img/listing/item (6).jpg" alt="item">
+              </div>
+              <div class="info">
+                <h6>Apple MacBook Air Apple M2 Chip</h6>
+                <span>Quantity: 1</span>
+                <span class="price">$100.00</span>
+              </div>
+              <button class="remove">
+                <img src="img/xmark.svg" alt="x">
+              </button>
+            </div>
+            <!-- product -->
+            <div class="product">
+              <div class="img">
+                <img src="img/listing/item (6).jpg" alt="item">
+              </div>
+              <div class="info">
+                <h6>Apple MacBook Air Apple M2 Chip</h6>
+                <span>Quantity: 1</span>
+                <span class="price">$100.00</span>
+              </div>
+              <button class="remove">
+                <img src="img/xmark.svg" alt="x">
+              </button>
+            </div>
+          </div>
+          <!-- mini cart footer -->
+          <div class="footer">
+            <div class="total">
+              <h4>Total: </h4>
+              <h4>$0.00</h4>
+            </div>
+            <button class="view_cart">
+              <img src="img/cart.svg" alt="">
+              View Cart
+            </button>
+            <a href="checkout.html">
+              <span class="icon">
+                <svg class="qodef-svg--button-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="13.853"
+                  viewBox="0 0 18.47 13.853">
+                  <path
+                    d="M675.316-719.322a.463.463,0,0,0-.043.652.462.462,0,0,0,.652.044l7.388-6.464a.462.462,0,0,0,.157-.348.462.462,0,0,0-.157-.348l-7.388-6.464a.462.462,0,0,0-.652.044.463.463,0,0,0,.043.652l6.464,5.655H665.462a.461.461,0,0,0-.462.462.461.461,0,0,0,.462.462H681.78Zm0,0"
+                    transform="translate(-665 732.365)"></path>
+                </svg>
+              </span>
+              Go to checkout
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="layer"></div>
     <!-- Modal -->
     <div class="modal fade getAppModal" id="getApp" tabindex="-1" data-bs-keyboard="false" role="dialog"
         aria-hidden="true">

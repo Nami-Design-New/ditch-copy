@@ -89,17 +89,21 @@
         <div class="dropdown">
           <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            <img src="img/lang.svg" alt="">
+            <img src="img/currency.svg" alt="" class="currency-img">
           </button>
           <div class="dropdown-menu" aria-labelledby="myAccount">
-            <a href="javascript:void(0)" class="dropdown-item"> English </a>
-            <a href="javascript:void(0)" class="dropdown-item"> العربية </a>
+            <a href="javascript:void(0)" class="dropdown-item"> USD </a>
+            <a href="javascript:void(0)" class="dropdown-item"> EUR </a>
+            <a href="javascript:void(0)" class="dropdown-item"> GBP </a>
+            <a href="javascript:void(0)" class="dropdown-item"> SAR </a>
+            <a href="javascript:void(0)" class="dropdown-item"> EGP </a>
           </div>
         </div>
         <div class="cart_btn">
           <button class="link">
             <img src="img/cart.svg" alt="cart">
           </button>
+          <span class="qunatity"> 10 </span>
         </div>
         <div class="dropdown">
           <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
@@ -2339,29 +2343,7 @@
   <script src="js/main.js"></script>
   <script src="js/custom.js?v=6"></script>
   <script>
-    function updateDistance(value) {
-      document.getElementById('distanceValue').textContent = value;
-    }
-
-    const cartBtn = document.querySelector(".cart_btn");
-    const miniCart = document.querySelector(".cart_mini");
-    const layer = document.querySelector(".layer");
-
-    cartBtn.addEventListener("click", () => {
-      miniCart.classList.toggle("active");
-      layer.classList.toggle("active");
-    })
-
-    document.addEventListener("click", function (event) {
-      if (
-        miniCart.classList.contains("active") &&
-        !event.target.closest(".cart_btn") &&
-        !event.target.closest(".cart_mini")
-      ) {
-        miniCart.classList.remove("active");
-        layer.classList.remove("active");
-      }
-    });
+    
 
   </script>
 </body>
